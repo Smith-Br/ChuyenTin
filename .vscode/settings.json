@@ -1,0 +1,15 @@
+{
+	"workbench.colorCustomizations": {
+		"editorBracketHighlight.foreground1": "#FF555E",
+		"editorBracketHighlight.foreground2": "#FF8650",
+		"editorBracketHighlight.foreground3": "#FFE981",
+		"editorBracketHighlight.foreground4": "#8BF18B",
+		"editorBracketHighlight.foreground5": "#83B2FF",
+		"editorBracketHighlight.foreground6": "#9B6EF3",
+		"editorBracketHighlight.unexpectedBracket.foreground": "#6C8EB4",
+		"tab.activeBorderTop": "#00000000",
+		"tab.activeBorder": "#00000000",
+		"minimap.background": "#00000000",
+		"scrollbar.shadow": "#00000000"
+	}
+}
