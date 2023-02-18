@@ -26,15 +26,18 @@ int main() {
 	fstream inp("test.inp", ios::in), out("test.out", ios::out);
 	int n; inp >> n;
 
-	int Arr[n];
-	for (int i = 0; i < n; i++) inp >> Arr[i];
+	int Arr[n+1];
+	for (int i = 1; i <= n; i++) inp >> Arr[i];
 
-	quickSort(Arr, 0, n - 1);
+	quickSort(Arr, 1, n);
 
-	int i = n-1;
-	while (Arr[i] == Arr[n-1] && i > 1) i = i - 1; 
+	for (int i = 1; i <= n; i++) out << Arr[i] << " ";
+	out << endl;
 
-	if (Arr[i] == Arr[n-1]) out << "NOT FOUND";
+	int i = n;
+	while (Arr[i] == Arr[n] && i > 0) i = i - 1; 
+
+	if (Arr[i] == Arr[n+1]) out << "NOT FOUND";
 	else out << Arr[i];
 	
 	return 0;
